@@ -1,0 +1,6 @@
+const myNumber = 123;
+// Instead of doing this :
+// console.log('myNumber: ' , myNumber);
+// You can do this:
+console.log({myNumber});
+//output : {myNumber: 123}
