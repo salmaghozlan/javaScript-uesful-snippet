@@ -1,0 +1,4 @@
+window.oncontextmenu = (event) => {
+  //Do staff
+  console.log('Right Click');
+}
