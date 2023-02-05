@@ -1,3 +1,18 @@
-function copyToClipboard(text){
-  navigator.clipboard.writeText(text);
-}
+<p id="text-to-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi vitae iusto voluptas natus accusamus quae
+        repellendus necessitatibus a, voluptatum laboriosam pariatur perspiciatis beatae voluptatem eius, fugiat
+        deserunt reiciendis asperiores!</p>
+
+        <button id="copy-button" data-clipboard-target="#text-to-copy">Copy Text</button>
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  const clipboard = new ClipboardJS('#copy-button');
+
+  clipboard.on('success', function(e) {
+    console.log(e);
+  });
+
+  clipboard.on('error', function(e) {
+    console.log(e);
+  });
+</script>
